@@ -1,0 +1,12 @@
+diff -r 3762170b6d4d cmsis_dsp/TransformFunctions/arm_bitreversal2.S
+--- a/cmsis_dsp/TransformFunctions/arm_bitreversal2.S	Fri Nov 20 08:45:18 2015 +0000
++++ b/cmsis_dsp/TransformFunctions/arm_bitreversal2.S	Wed Nov 04 10:34:29 2020 +0900
+@@ -40,7 +40,7 @@
+ ;* ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ ;* POSSIBILITY OF SUCH DAMAGE.
+ ;* -------------------------------------------------------------------- */
+-#if defined(__CC_ARM)       // Keil
++#if defined(__CC_ARM) || defined(__ARMCC_VERSION)       // Keil
+     #define CODESECT AREA     ||.text||, CODE, READONLY, ALIGN=2
+     #define LABEL
+ #elif defined(__IASMARM__)  // IAR
