@@ -40,7 +40,7 @@ int bia_example(void)
     while(running) {
         bia_event_flags.wait_any(BIA_DATA_READY);
         imp = bia_cal_impedance(p_bia_data, bia_data_len);
-        printf("%ld\r\n", imp);
+        printf("%10ld\r\n", imp);
     }
 
     bia_stop();

@@ -80,7 +80,7 @@ int ppg_example(void)
         if (ppg_ready & PPG_CH0_DATA_READY) {
             ppg_data = ppg_get_data(0, 2, &len);
             for(i = 0; i < len; i++)
-                printf("%d\n", ppg_data[i]);
+                printf("%10d\n", ppg_data[i]);
         }
         if (ppg_ready & PPG_CH1_DATA_READY) {
             // printf("Channel 1 Ready \r\n");
