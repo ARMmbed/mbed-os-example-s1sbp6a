@@ -70,7 +70,7 @@ int ecg_example(void)
         flags = ecg_event_flags.wait_any(ECG_DATA_READY);
         if (flags & ECG_DATA_READY)
         for (int i = 0; i < ecg_len; i++) {
-            printf("%d\r\n", pECG[i]);
+            printf("%6d\r\n", pECG[i]);
         }
     }
     ecg_stop();
