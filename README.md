@@ -4,18 +4,28 @@ The example project is the getting started example for BP6A.
 It contains ECG, PPG, BIA, and GPIO, i2c application.
 You can build the project with all supported Mbed OS build tools.
 
+## Mbed studio
+You can import s1sbp6a example.
+* step 1. Open the File menu and select Import Program
+* step 2. Paste the full HTTPS of this example, "https://github.com/ARMmbed/mbed-os-example-s1sbp6a"
 
-## Download library & Apply patch
-The example project needs [s1sbp6a_afe_lib](https://github.com/ARMmbed/mbed-bp6a_afe_lib).
 
-
-*  S1SBP6A_AFE_LIB
+## Mbed CLI
+You can import after clone manually.
+* step 1.  manually clone this example
 ```bash
-$git clone https://github.com/ARMmbed/mbed-bp6a_afe_lib
+$git clone  https://github.com/ARMmbed/mbed-os-example-s1sbp6a
 ```
-
-## Build & Download
-You can build the example.
+* step 2. set the this program directory as the root of your program
+```bash
+$mbed new .
+```
+* setp 3. get all missing libraries
+```bash
+ mbed deploy
+```
+#### Build & Download
+You can build the example and copy it to DAPLink to download the firmware image.
 
 ```bash
 $mbed compile  -t <TOOLCHAIN> -m S1SBP6A
