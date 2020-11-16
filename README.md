@@ -6,16 +6,9 @@ You can build the project with all supported Mbed OS build tools.
 
 
 ## Download library & Apply patch
-The example project needs [mbed-dsp](https://os.mbed.com/users/mbed_official/code/mbed-dsp) and [s1sbp6a_afe_lib](https://github.com/ARMmbed/mbed-bp6a_afe_lib).
-You should download these librares and apply a patch.
+The example project needs [s1sbp6a_afe_lib](https://github.com/ARMmbed/mbed-bp6a_afe_lib).
 
 
-* DSP Lib
-```bash
-$hg clone https://os.mbed.com/users/mbed_official/code/mbed-dsp/
-$cd mbed-dsp
-$hg import ../mbed-dsp.patch --no-commit
-```
 *  S1SBP6A_AFE_LIB
 ```bash
 $git clone https://github.com/ARMmbed/mbed-bp6a_afe_lib
