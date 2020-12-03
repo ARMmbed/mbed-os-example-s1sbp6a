@@ -88,7 +88,6 @@ def main(argv):
 			portName = arg
 
 
-	portName = '/dev/ttyACM0'
 	baudRate = 115200
 	maxPlotLength = 512
 	s = serialPlot(portName, baudRate, maxPlotLength)
